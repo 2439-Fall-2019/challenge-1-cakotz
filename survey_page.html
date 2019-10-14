@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css"> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+		<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	</head>
+	<body>
+		<!-- Collin Kotz
+			.html
+			INFO2439
+			Thoendel
+			10/14/19
+        -->
+        
+		<div data-role="page" id="home_page" data-title="The MCC Sage Bistro">
+            <div data-role="header" data-position="fixed">
+                <h1>Survey</h1>
+            </div>
+                    
+            <div data-role="navbar">
+                <ul>
+                    <li><h1><a href="home_page.html">Home</a></h1></li>
+                    <li><h1><a href="google_map_sage_bistro.html">Where To Find Us</a></h1></li>
+                    <li><h1><a href="survey_page.html">Survey</a></h1></li>
+                    <li><h1><a href="reservations_page.html">Reservations</a></h1></li>
+                    <li><h1><a href="menu_page">Menu</a></h1></li>
+                </ul>
+            </div>
+
+            <div role="main" class="ui-content">
+                <form action="echo.html" method="post">
+                    <div class="ui-field-contain">
+                        <label for="name">Student Name:</label>
+                        <input type="text" name="name" id="name" value=""/>
+                    </div>
+
+                    <div class="ui-field-contain">
+                        <label for="tableNum">Table Number:</label>
+                        <input type="text" name="tableNum" id="tableNum" value=""/>
+                    </div>
+
+                    <div class="ui-field-contain">
+                        <label for="timeSeated">Time Seated:</label>
+                        <input type="text" name="timeSeated" id="timeSeated" value=""/>
+                    </div>
+
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                    <legend>Greeting:</legend>
+                    <input type="radio" name="greeting" id="1poor" value="poor">
+                    <label for="1poor">poor</label>
+                    <input type="radio" name="greeting" id="1fair" value="fair">
+                    <label for="1fair">fair</label>
+                    <input type="radio" name="greeting" id="1good" value="good">
+                    <label for="1good">good</label>
+                    <input type="radio" name="greeting" id="1excellent" value="excellent">
+                    <label for="1excellent">excellent</label>
+                    </fieldset>
+
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                    <legend>Server's menu knowledge:</legend>
+                    <input type="radio" name="knowledge" id="2poor" value="poor">
+                    <label for="2poor">poor</label>
+                    <input type="radio" name="knowledge" id="2fair" value="fair">
+                    <label for="2fair">fair</label>
+                    <input type="radio" name="knowledge" id="2good" value="good">
+                    <label for="2good">good</label>
+                    <input type="radio" name="knowledge" id="2excellent" value="excellent">
+                    <label for="2excellent">excellent</label>
+                    </fieldset>
+
+                    <fieldset data-role="controlgroup" data-type="horizontal">
+                    <legend>Attentivness of server:</legend>
+                    <input type="radio" name="attentivness" id="3poor" value="poor">
+                    <label for="3poor">poor</label>
+                    <input type="radio" name="attentivness" id="3fair" value="fair">
+                    <label for="3fair">fair</label>
+                    <input type="radio" name="attentivness" id="3good" value="good">
+                    <label for="3good">good</label>
+                    <input type="radio" name="attentivness" id="3excellent" value="excellent">
+                    <label for="3excellent">excellent</label>
+                    </fieldset>
+
+                    <div class="ui-field-contain">
+                        <label for="name">Your comments:</label>
+                        <input type="text" name="comments" id="comments" value=""/>
+                    </div>
+
+                    <input type="submit" name="submit" value="Send"/>
+                </form>
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                    <p>Created By: <a href="mailto:cakotz@mail.mccneb.edu">Collin Kotz</a></p>
+			</div>
+        </div>
+	</body>
+</html>
